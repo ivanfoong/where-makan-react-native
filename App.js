@@ -5,33 +5,14 @@ import {
   Text,
   View
 } from 'react-native';
-import WelcomeInstructionView from './app/WelcomeInstructionView'
+import MakanPlaceList from './app/MakanPlaceList'
 
 class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <WelcomeInstructionView />
-      </View>
+      <MakanPlaceList />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  }
-});
 
 module.exports = App;
